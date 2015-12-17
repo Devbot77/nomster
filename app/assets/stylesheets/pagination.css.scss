@@ -1,0 +1,17 @@
+.page-links {
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-size: 16px;
+	text-align: center;
+}
+
+.page-links .next_page, .page-links .previous_page {
+	padding: 5px;
+	display: inline block;
+	background-color: white;
+	border: 1 px solid #ccc;
+	margin: 0px 5px 0px 5px;
+	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+	box-shadow: 1px 1px 2px 0 #d0d0d0;
+	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+}
