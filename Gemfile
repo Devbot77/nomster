@@ -15,6 +15,12 @@ gem 'simple_form'
 # user authentication gem
 gem 'devise', '>= 3.2.4'
 
+# geocoding gem
+gem "geocoder"
+
+# Heroku-friendly Rails app configuration
+gem "figaro", ">= 1.0.0"
+
 # Use SCSS for stylesheets
 gem 'sass-rails' 
 
