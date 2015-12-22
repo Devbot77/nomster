@@ -21,6 +21,9 @@ gem "geocoder"
 # Heroku-friendly Rails app configuration
 gem "figaro", ">= 1.0.0"
 
+# use image uploading tool
+gem 'carrierwave'
+
 # Use SCSS for stylesheets
 gem 'sass-rails' 
 
