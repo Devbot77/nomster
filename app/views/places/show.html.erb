@@ -4,15 +4,9 @@
 	<br />
 	<p><%= @place.description %></p>
 
-	<% if @place.photos.present? %>
-		<% @place.photos.each do |photo| %>
-			<%= image_tag photo.picture %>
-			<div class="clear"></div>
-			<%= photo.caption %>
-		<% end %>
-	<% end %>
+	
 	<br />
-
+	<div class="clear"></div>
 	<% if @place.latitude.present? && @place.longitude.present? %>
 	    <script>
 			function initMap() {
@@ -35,11 +29,22 @@
 
 		<div id="map"></div>
 	<% end %>
+	<br />
+
+	<% if @place.photos.present? %>
+		<% @place.photos.each do |photo| %>
+			<div class="col-xs-12 col-sm-3">
+				<%= image_tag photo.picture, :class => "img-responsive center-block" %>
+				<div class="clear"></div>
+				<%= photo.caption %>
+			</div>
+		<% end %>
+	<% end %>
 
 	<br />
 	<!-- Button trigger  Upload Photo modal -->
 
-	<div class="pull-right">
+	<div class="pull-right clear">
 		<% if current_user && current_user == @place.user %>
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#picModal">
   				Upload photo

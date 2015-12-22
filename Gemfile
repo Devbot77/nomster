@@ -24,6 +24,9 @@ gem "figaro", ">= 1.0.0"
 # use image uploading tool
 gem 'carrierwave'
 
+# use fog gem for carrierwave
+gem "fog", "~> 1.3.1"
+
 # Use SCSS for stylesheets
 gem 'sass-rails' 
 
